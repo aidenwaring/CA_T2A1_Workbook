@@ -52,6 +52,18 @@ Discuss the implementation of Agile project management methodology. [200-300]
 ## Q4
 
 Provide an overview and description of a standard source control workflow. [100-200]
+Source control workflow refers to the recommended steps and procedure adhered to in a source control environment. Developers utilising a source control system can contribute and work in different ways. The workflow concept is a design that defines the rules versioning, branching and the control of the master branch.
+[Reference](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+A popular standard workflow practiced by developers is the centralized workflow.
+In a centralized workflow, developers all contribute to a shared repository (as opposed to fork-pull workflow). This central repository is often created and hosted on source control hosting services such as Bitbucket or GitHub.
+
+Developers begin by cloning from the central repository. Developers will make changes and edit files committing locally and synchronising upstream at a convenient time.
+
+Publishing to the central repository, "pushing"
+[Reference](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+
+
 
 **Answer:**
 
