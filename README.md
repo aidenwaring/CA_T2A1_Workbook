@@ -30,8 +30,18 @@ Describe the architecture of a typical Rails application. [200-300]
 
 **Answer:**
 
-Put answer here.
-[Reference](https://google.com)
+Ruby on Rails is a software framework used for web development. An extension of the Ruby programming language, Ruby on Rails (or Rails as it is often called) utilises Ruby and combines it with HTML, CSS and JavaScript to create a web application that runs on a web server..
+Rails applies the model-view-controller (MVC) software design pattern for it's architecture. This architectural pattern seperates the application into three primary components: model, view and controller - each with it's own responsibilities.
+The model represents the central component of the design pattern and manages the behaviour and data of the data of the application 
+
+
+As per the Rails API, the model layer represents the domain model
+This structure is present within the file structure of the Rails application. Rails also directly refers to this design pattern with it's classes: namely the ActionController, ActionView and ActiveRecord, each representing the controller, view and model respectively. Each of these classes or objects are organised in a hierarchy of classes defined further in the Rails API.
+[Reference](http://railsapps.github.io/what-is-ruby-rails.html)
+
+It also follows the convention over configuration rule, which is also known as Coding by convention. This means, that it has already taken a few decisions for you and you don’t have to worry about those things until you follow ROR conventions. [Reference](https://medium.com/@SravanCynixit/overview-of-ruby-on-rails-architecture-9902de7c93f9)
+
+
 
 ## Q2
 
