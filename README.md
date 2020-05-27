@@ -67,11 +67,11 @@ Source control workflow refers to the recommended steps and procedure adhered to
 [Reference](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 A popular standard workflow practiced by developers is the centralized workflow.
-In a centralized workflow, developers all contribute to a shared repository (as opposed to fork-pull workflow). This central repository is often created and hosted on source control hosting services such as Bitbucket or GitHub.
+In a centralized workflow, developers all contribute to a shared repository (as opposed to fork-pull workflow. This central repository is often created and hosted on source control hosting services such as Bitbucket or GitHub.
 
-Developers begin by cloning from the central repository. Developers will make changes and edit files committing locally and synchronising upstream at a convenient time.
+Problems arise when publishing or "pushing" to the central repository without following a source control workflow. The centralized workflow, sometimes referred to as feature branch workflow, ensures that all code changes are made in new, feature-specific branches instead of master. These feature branches are created on the repository for code changes. Developers will make changes and edit files committing locally and synchronising upstream at a convenient time. Reviewed changes can then be "pulled" back into the shared repositories master branch by initiating a pull request. The request can then either be accepted or denied. Accepted pull requests then see new code "merged" into the master branch. 
 
-Publishing to the central repository, "pushing"
+This segmentation of new code and it's staged change control methodology ensures that the master branch remains valid, stable and conflict-free. This approach is often employed by organisations for in-house development.
 [Reference](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 
 
