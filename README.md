@@ -63,6 +63,9 @@ Discuss the implementation of Agile project management methodology. [200-300]
 ## Q4
 
 Provide an overview and description of a standard source control workflow. [100-200]
+
+**Answer:**
+
 Source control workflow refers to the recommended steps and procedure adhered to in a source control environment. Developers utilising a source control system can contribute and work in different ways. The workflow concept is a design that defines the rules versioning, branching and the control of the master branch.
 [Reference](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
@@ -73,10 +76,6 @@ Problems arise when publishing or "pushing" to the central repository without fo
 
 This segmentation of new code and it's staged change control methodology ensures that the master branch remains valid, stable and conflict-free. This approach is often employed by organisations for in-house development.
 [Reference](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
-
-
-
-**Answer:**
 
 ## Q5
 
