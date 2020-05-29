@@ -32,15 +32,17 @@ Describe the architecture of a typical Rails application. [200-300]
 
 Ruby on Rails is a software framework used for web development. An extension of the Ruby programming language, Ruby on Rails (or Rails as it is often called) utilises Ruby and combines it with HTML, CSS and JavaScript to create a web application that runs on a web server..
 Rails applies the model-view-controller (MVC) software design pattern for it's architecture. This architectural pattern seperates the application into three primary components: model, view and controller - each with it's own responsibilities.
-The model represents the central component of the design pattern and manages the behaviour and data of the data of the application.
+
+As per the Rails API, the model layer represents the central component of the design pattern. It  manages the behaviour and data of the data of the application. The model contains the data of the application and it's links to databases, the business logic and the current state of the application. Each of the programs references to data stored in the database and it's structure works indepentandly of the user and their interfaces. Rails seperation of model information and data representation from the rest of the application ensures minimal repition of data handling.
 [Reference](https://api.rubyonrails.org/)
 
+The view layer represents the user interface presented to the user. The view does not perform any processing, rather it is passed information from the rest of the application to the appropriate user. 
 
-As per the Rails API, the model layer represents the domain model
-This structure is present within the file structure of the Rails application. Rails also directly refers to this design pattern with it's classes: namely the ActionController, ActionView and ActiveRecord, each representing the controller, view and model respectively. Each of these classes or objects are organised in a hierarchy of classes defined further in the Rails API.
-[Reference](http://railsapps.github.io/what-is-ruby-rails.html)
+The controller layer handles the user interface and application logic. While the view visually represents data it has been given on screen for the user, the controller manages client requests for certain information, retrieves the relevant information and directs the user to a view, where that information can be visually represented.
 
-It also follows the convention over configuration rule, which is also known as Coding by convention. This means, that it has already taken a few decisions for you and you don’t have to worry about those things until you follow ROR conventions. [Reference](https://medium.com/@SravanCynixit/overview-of-ruby-on-rails-architecture-9902de7c93f9)
+Seperating these responsibilities adheres to the strong design philosophy rules. The first of which is that the seperation of concerns within the application increases reusability, as a model can be reused and queried in different ways for different views. Code is easier to maintain, as each application component has a low depenancy on others. This makes parts of the application easier to edit or change without concern of impacting other functions. MVC component seperation also improves the scalability of the app. [Glenn Goorich in 'Rails: Novice to Ninja'](https://www.sitepoint.com/model-view-controller-mvc-architecture-rails/), states that "...for example, if your application begins experiencing performance issues because database access is slow, you can upgrade the hardware running the database without other components being affected."
+
+Rails also follows the "Convention Over Configuration" rule, which is also known as Coding by convention. This is a design paradigm that attempts to simplify designing Rails applications using its framework by steamlining development steps and decreasing the number of decisions made by a developer. This means, that it has already taken a few decisions for you and you don’t have to worry about those things until you follow ROR conventions. [Reference](https://medium.com/@SravanCynixit/overview-of-ruby-on-rails-architecture-9902de7c93f9)
 
 
 
@@ -50,11 +52,15 @@ Identify a database management system (DBMS) commonly used in web applications (
 
 **Answer:**
 
+
+
+
+
+## Q3
+
 ##### Details:
 
 ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement.
-
-## Q3
 
 Discuss the implementation of Agile project management methodology. [200-300]
 
@@ -83,11 +89,13 @@ Provide an overview and description of a standard software testing process (e.g.
 
 **Answer:**
 
+
+
+## Q6
+
 ##### Details:
 
 Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.
-
-## Q6
 
 Discuss and analyse requirements related to information system security and how they relate to the project.[100-200]
 
@@ -105,11 +113,13 @@ Research what your legal obligations are in relation to handling user data and h
 
 **Answer:**
 
+
+
+## Q9
+
 ##### Details:
 
 ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement.
-
-## Q9
 
 Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.[100-200]
 
@@ -127,11 +137,13 @@ Describe the manipulative aspects of the relational database model. Your descrip
 
 **Answer:**
 
+
+
+## Q12
+
 ##### Details:
 
 The efficiency of an app (i.e. site) and the algorithms used are of the utmost importance. The next set of questions relate to this RfQ-requirement.
-
-## Q12
 
 Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O).[300-500]
 
@@ -143,11 +155,13 @@ Identify and explain the workings of TWO search algorithms and discuss and compa
 
 **Answer:**
 
+
+## Q14
+
+
 ##### Details:
 
 Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.
-
-## Q14
 
 Conduct research into a marketplace website (app) and answer the following parts:  
 a. List and describe the software used by the app.
