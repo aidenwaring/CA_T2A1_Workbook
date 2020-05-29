@@ -52,9 +52,28 @@ Identify a database management system (DBMS) commonly used in web applications (
 
 **Answer:**
 
+A database management system (DBMS) is software 
+for managing databases. PostgreSQL is a popular database management system chosen by many developers for use with their web applications. PostgreSQL provides many advantages to its developed web application, though not without its setbacks.
 
+##### Advantages:
 
+- Open Source
+- Highly expandable
+- Largely compliant with SQL standard
+- Possible to process complex data types
+- Flexible full text search
+- Creation of own functions, triggers, data types
+- Good language support (Python, Java, Perl, PHP, C, C++)
+- Supports JSON
+- Cross platform
 
+##### Disadvantages:
+
+- Not available on all hosts by default
+- Expandable documentation only available in English
+- Comparatively low reading speed
+
+[Reference](https://www.ionos.com/digitalguide/server/know-how/postgresql/)
 
 ## Q3
 
