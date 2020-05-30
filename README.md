@@ -98,9 +98,9 @@ The fundamentals of the Agile methodology stems from the [Agile Manifesto](http:
 
 These values and their 'Twelve Principles of Agile Software' helped define a new way of approaching software development. Over the years many different organisations have helped further these core values and found ways to implement these strategies into their project delivery. The growing use of Agile has helped better define it's processes. Several different types of Agile methodologies have been created, while similar, are designed for different delivery models.
 
-The implementation of the Agile methodology is first determined by your delivery objective. Teams who work continuiously on a project with continuious release methodlogy often chose to implement the Kanban methodology, which focuses on visual representations of work to maximize efficiency and highlight where work is needed. Teams who are delivering a product or service by a certain deadline may chose to use Agile in the 'Scrum' framework. In a scrum, teams work in a several interval phases named sprints, during which their goal is to create an interative loop of developing the software and gathering feedback, using this as input for their next sprint.
+The implementation of the Agile methodology is first determined by your delivery objective. Teams who work continuiously on a project with continuious release methodlogy often chose to implement the Kanban methodology, which focuses on visual representations of work to maximize efficiency and highlight where work is needed. Teams who are delivering a product or service by a certain deadline may chose to use Agile in the 'Scrum' framework. In a scrum, teams work in a several interval phases named sprints, during which their goal is to create an interative loop of developing the software and gathering feedback, using this as input for their next sprint.[Reference](https://www.atlassian.com/agile/kanban/kanban-vs-scrum)
 
-If we take a look at using scrum as an example, after determining that scrum is chosen to be the preferred delivery methodology, implementing it as part of managing the project is as follows:
+If we take a look at using scrum as an example, after determining that scrum is chosen to be the preferred delivery methodology, implementing it as part of managing the project is as follows:[Reference](https://www.scrumguides.org/scrum-guide.html)
 
 #### 1. Defining Scrum Team
 
@@ -156,7 +156,12 @@ Provide an overview and description of a standard software testing process (e.g.
 
 **Answer:**
 
+Software testing is the process of evaluating the functionality of software and its quality, identifying bugs and errors that may disrupt the user experience.[Reference](https://www.toolsqa.com/software-testing/test-process-in-software-testing/)
+There are three popular approaches to testing: white box, black box and grey box testing. Each one refers to the amount of visibility the individual testing the application has to the application's code. White box testing has a user internal to the design and programming of the software create the test cases. Black box testing is performed by users without looking at the code, where the input and output of the user's experience defines the test cases. Grey box testing is performed by a user who does not have access to the code but rather access to the code's documentation which is to be used to create test cases.[Reference](https://www.softwaretestingmaterial.com/software-testing/)
 
+Regardless of the approach, the method of testing software for error can be performed in a variety of different ways. For this example manual testing will be discussed.
+
+Manual testing is a process of manually executing test cases without the use of testing tools. This is done by comparing the current behaviour of the software to the expected behaviour of the software. A test plan is produced before testing begins. This outlines the approach which the tester will take to completing the testing and to ensure that no part of the code has been overlooked. Each operation within the program that a user can undertake is considered a 'test case'. This test case identifies the code segment or application component being tested and what the expected outcome of the operation should be. Any differences identified between the expected outcome and the result of the test are noted as a discrepancy or defect. These are logged to be provided back to the developer for feedback. For each identified discrepancy that has been identified and fixed, a re-evaluation should occur, where the tester performs the same use case test to ensure that the problem has since been resolved and that the expected outcome matches the fixed result. This process is repeated for the entirety of the application. Automation is often used to coincide with manual testing as while manual testing is effective, it is also time consuming.
 
 ## Q6
 
