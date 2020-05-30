@@ -44,8 +44,6 @@ Separating these responsibilities adheres to the strong design philosophy rules.
 
 Rails also follows the "Convention Over Configuration" rule, which is also known as Coding by convention. This is a design paradigm that attempts to simplify designing Rails applications using its framework by streamlining development steps and decreasing the number of decisions made by a developer. This means, that it has already taken a few decisions for you and you don’t have to worry about those things until you follow ROR conventions. [Reference](https://medium.com/@SravanCynixit/overview-of-ruby-on-rails-architecture-9902de7c93f9)
 
-
-
 ## Q2
 
 Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database.[150-200]
