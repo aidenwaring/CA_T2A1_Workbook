@@ -57,23 +57,25 @@ for managing databases. PostgreSQL is a popular database management system chose
 
 ##### Advantages:
 
-- Open Source
-- Highly expandable
-- Largely compliant with SQL standard
-- Possible to process complex data types
-- Flexible full text search
-- Creation of own functions, triggers, data types
-- Good language support (Python, Java, Perl, PHP, C, C++)
-- Supports JSON
-- Cross platform
+- Cost
+One of PostgreSQL's major advantages is that the DBMS is completely open source. This grants "[permission to use, copy, modify, and distribute this software and its documentation for any purpose, without fee, and without a written agreement..."](https://opensource.org/licenses/postgresql). ["The term open source refers to something people can modify and share because its design is publicly accessible."](https://opensource.com/resources/what-open-source) As the code is publicly available it means that there will always be opportunities to make changes and improvements to the code base where projects require them.  Developers can develop their own modules and propose them to the open source community.
+
+- Cost
+This means that developers that may chose to implement PostgreSQL as their chosen DBMS for their web application may do so for free: no royalties or licensing costs and restrictions to consider as part of their project's scope. 
+
+- ACID Support
+In computer science, ACID is a collection of properties that ensure database transactions are processed reliably. PostgreSQL is compliant with this design principles. The acronym ACID details the desirable properties for transactions within a database. ACID stands for atomicity, consistency, isolation and durability. These principles ensure that PostgreSQL operations are resilient to fault, such as crashes, failed transactions and unexpected hardware & software interruption. 
+
+- Relational DBMS Design
+PostgreSQL is an object-relational database, while MySQL is a purely relational database. This means that PostgreSQL includes features like table inheritance and function overloading, which can be important to certain applications. PostgreSQL also adheres more closely to SQL standards. For example, "PostgreSQL handles concurrency better than MySQL."[Reference](https://developer.okta.com/blog/2019/07/19/mysql-vs-postgres)
 
 ##### Disadvantages:
 
-- Not available on all hosts by default
-- Expandable documentation only available in English
-- Comparatively low reading speed
+- Less Hosts
+As PostgreSQL is considered a smaller and less used DBMS compared to another service such as MySQL, it is less supported on various web hosting platforms. 
 
-[Reference](https://www.ionos.com/digitalguide/server/know-how/postgresql/)
+- Performance
+Studies have also shown that PostgreSQL performs slightly slower compared to alternative DBMS options when performing specific operations (comparatively low reading speed). [Reference](https://www.xplenty.com/blog/postgresql-vs-mysql-which-one-is-better-for-your-use-case/)
 
 ## Q3
 
