@@ -40,7 +40,7 @@ The view layer represents the user interface presented to the user. The view doe
 
 The controller layer handles the user interface and application logic. While the view visually represents data it has been given on screen for the user, the controller manages client requests for certain information, retrieves the relevant information and directs the user to a view, where that information can be visually represented.
 
-Separating these responsibilities adheres to the strong design philosophy rules. The first of which is that the separation of concerns within the application increases re-usability, as a model can be reused and queried in different ways for different views. Code is easier to maintain, as each application component has a low dependency on others. This makes parts of the application easier to edit or change without concern of impacting other functions. MVC component seperation also improves the scalability of the app. [Glenn Goorich in 'Rails: Novice to Ninja'](https://www.sitepoint.com/model-view-controller-mvc-architecture-rails/), states that "...for example, if your application begins experiencing performance issues because database access is slow, you can upgrade the hardware running the database without other components being affected."
+Separating these responsibilities adheres to the strong design philosophy rules. The first of which is that the separation of concerns within the application increases re-usability, as a model can be reused and queried in different ways for different views. Code is easier to maintain, as each application component has a low dependency on others. This makes parts of the application easier to edit or change without concern of impacting other functions. MVC component separation also improves the scalability of the app. [Glenn Goorich in 'Rails: Novice to Ninja'](https://www.sitepoint.com/model-view-controller-mvc-architecture-rails/), states that "...for example, if your application begins experiencing performance issues because database access is slow, you can upgrade the hardware running the database without other components being affected."
 
 Rails also follows the "Convention Over Configuration" rule, which is also known as Coding by convention. This is a design paradigm that attempts to simplify designing Rails applications using its framework by streamlining development steps and decreasing the number of decisions made by a developer. This means, that it has already taken a few decisions for you and you don’t have to worry about those things until you follow ROR conventions. [Reference](https://medium.com/@SravanCynixit/overview-of-ruby-on-rails-architecture-9902de7c93f9)
 
@@ -96,7 +96,7 @@ The fundamentals of the Agile methodology stems from the [Agile Manifesto](http:
 
 These values and their 'Twelve Principles of Agile Software' helped define a new way of approaching software development. Over the years many different organisations have helped further these core values and found ways to implement these strategies into their project delivery. The growing use of Agile has helped better define it's processes. Several different types of Agile methodologies have been created, while similar, are designed for different delivery models.
 
-The implementation of the Agile methodology is first determined by your delivery objective. Teams who work continuiously on a project with continuious release methodlogy often chose to implement the Kanban methodology, which focuses on visual representations of work to maximize efficiency and highlight where work is needed. Teams who are delivering a product or service by a certain deadline may chose to use Agile in the 'Scrum' framework. In a scrum, teams work in a several interval phases named sprints, during which their goal is to create an interative loop of developing the software and gathering feedback, using this as input for their next sprint.[Reference](https://www.atlassian.com/agile/kanban/kanban-vs-scrum)
+The implementation of the Agile methodology is first determined by your delivery objective. Teams who work continuously on a project with continuous release methodology often chose to implement the Kanban methodology, which focuses on visual representations of work to maximize efficiency and highlight where work is needed. Teams who are delivering a product or service by a certain deadline may chose to use Agile in the 'Scrum' framework. In a scrum, teams work in a several interval phases named sprints, during which their goal is to create an iterative loop of developing the software and gathering feedback, using this as input for their next sprint.[Reference](https://www.atlassian.com/agile/kanban/kanban-vs-scrum)
 
 If we take a look at using scrum as an example, after determining that scrum is chosen to be the preferred delivery methodology, implementing it as part of managing the project is as follows:[Reference](https://www.scrumguides.org/scrum-guide.html)
 
@@ -112,11 +112,11 @@ A product backlog is created. This is a tool to systematically list all features
 
 The duration of the sprint is determined. The sprint's duration is relative to how often the team will receive feedback from the client as this is done between sprints. Shorter sprints result in customer feedback being given more frequently whereas longer sprints allow the team to work on items more thoroughly. Sprints are often two weeks in duration by default.
 
-The selected team for the scrum choses the most important user stories (MVPs) to work on. A sprint backlog is created which consists of items to be completed in the next sprint.
+The selected team for the scrum chooses the most important user stories (MVPs) to work on. A sprint backlog is created which consists of items to be completed in the next sprint.
     
 ##### 4. Sprinting
 
-Scrum meetings or standup meetings (standups) are held typically at the start of each work day during the sprint for developers to update team leads and project managers. Each member discusses the current project's status, where they are at with their objectives, completed items, identified problems and roadblocks.
+Scrum meetings or stand-up meetings (stand-ups) are held typically at the start of each work day during the sprint for developers to update team leads and project managers. Each member discusses the current project's status, where they are at with their objectives, completed items, identified problems and roadblocks.
 Work begins on the selected user stories. User stories are organised into cards, and as the sprint progresses are moved into categories: to-do, in progress, testing and done. Project management software platforms such as Atlassian JIRA and Trello are often used to organise these.
 
 ##### 5. Sprint Testing & Demonstration
@@ -125,7 +125,7 @@ As part of the full life-cycle testing process that agile uses, internal testing
 
 ##### 6. Sprint Retrospective
 
-Once the previous segment has completed, the team reflects on the performance of the sprint and undergo an analysis on what worked and what did not. Suggestions on how to improve and given and the team takes construcive criticism in an analysis to provide to the scrum master. These improvements can be implemented for the next sprint.
+Once the previous segment has completed, the team reflects on the performance of the sprint and undergo an analysis on what worked and what did not. Suggestions on how to improve and given and the team takes constructive criticism in an analysis to provide to the scrum master. These improvements can be implemented for the next sprint.
 
 ##### 7. Next Cycle of Sprints
 
@@ -225,16 +225,16 @@ A further investigation of these laws shows that each one is relevant to our app
 - This principle requires individuals the option of not identifying themselves or instead using a pseudonym instead. This can be addressed by adjusting the user sign-up form to not require real-names and outlining this option within the application's privacy policy.
 
 3. Collection of solicited personal information
-- Adhering to this principle, the application will only collect user information that is immediately relevant to the application and volunatarily given. User data is not to be collected from sources external to the application.
+- Adhering to this principle, the application will only collect user information that is immediately relevant to the application and voluntarily given. User data is not to be collected from sources external to the application.
 
 4. Dealing with unsolicited personal information
-- If the application somehow happens to acquire unsolicited user information, the application must destroy or de-identify this unless it is contained within a Commonwleaht record.
+- If the application somehow happens to acquire unsolicited user information, the application must destroy or de-identify this unless it is contained within a Commonwealth record.
 
 5. Notification of the collection of personal information
 - The application clearly outlines in what circumstances it collects personal information.
 
 6. Use or disclosure of personal information
-- The application clearly outlines in what circumstances it may discolse the information it holds.
+- The application clearly outlines in what circumstances it may disclose the information it holds.
 
 7. Direct marketing
 - The application may only use collected personal information if certain conditions are met. All users are given the option to opt out of marketing emails.
@@ -254,7 +254,7 @@ A further investigation of these laws shows that each one is relevant to our app
 12. Access to personal information
 - The application must oblige when an individual requests to be given access to personal information held about them by the entity. 
 
-13. Correction of persoanl information
+13. Correction of personal information
 - The application must oblige in relation to correcting the personal information it holds about individuals.
 
 ## Q9
@@ -267,11 +267,7 @@ Describe the structural aspects of the relational database model. Your descripti
 
 **Answer:**
 
-The relational database model represents the database as a collection of relatations. The structural aspects of a relational database are primarily the collection of tables which helps define the relationships between data. Tables consist of multiple rows, where each row is a set of values that are related to each other using specific notation. The rows' values are represented in the columns of the table. The schema refers to a databases structure and also denotes what relations it contains. [Reference](https://dondi.lmu.build/share/db/relational1.pdf)
-
-Relational Database Models contain the concept of constraints domain, key and referential integrity constraints. These constraints are rules set in place by the schema to ensure that data is not incorrectly referenced or duplicated. Domain restraints ensure data validity, such as checking for null data. Key constraints ensure that the key of the row attributed to data is unique and is only for that set of data. Referential integrity allows for the concept of foreign keys, which allows the relational database management system (R-DBMS) to create a relation which should refer to data in other tables.[Reference](https://www.guru99.com/relational-data-model-dbms.html)
-
-These relationships allow for the seperation of data. The seperation of data into seperate tables with links provides a number of benefits to our system, such as better performance, as queries will often be able to search through records faster using keys and seperating out table information rather than reading a large table sequentially.
+The relational database model represents the database as a collection of relations. The structural aspects of a relational database are primarily the collection of tables which helps define the relationships between data. Tables consist of multiple rows, where each row is a set of values that are related to each other using specific notation. The rows' values are represented in the columns of the table. The schema refers to a databases structure and also denotes what relations it contains. [Reference](https://dondi.lmu.build/share/db/relational1.pdf)
 
 ## Q10
 
@@ -279,16 +275,21 @@ Describe the integrity aspects of the relational database model. Your descriptio
 
 **Answer:**
 
-Each of these aforementioned are used in relational database structure to ensure data validity and consistency. These integrity notations also ensure the ACID principles (Atomicty, Consistency, Isolation and Durability) as we refered to them earlier in the RfQ. 
+Relational Database Models contain the concept of constraints domain, key and referential integrity constraints. These constraints are rules set in place by the schema to ensure that data is not incorrectly referenced or duplicated. Domain restraints ensure data validity, such as checking for null data. Key constraints ensure that the key of the row attributed to data is unique and is only for that set of data. Referential integrity allows for the concept of foreign keys, which allows the relational database management system (R-DBMS) to create a relation which should refer to data in other tables.[Reference](https://www.guru99.com/relational-data-model-dbms.html)
+
+These relationships allow for the separation of data. The separation of data into separate tables with links provides a number of benefits to our system, such as better performance, as queries will often be able to search through records faster using keys and seperating out table information rather than reading a large table sequentially.
+
+Each of the aforementioned constraints are used in relational database structure to ensure data validity and consistency. These integrity notations also ensure the ACID principles (Atomicty, Consistency, Isolation and Durability) as we referred to them earlier in the RfQ. 
 
 # Q11
 
 Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.[100-200]
 
-
-
 **Answer:**
-CRUD
+
+One of the primary ways to manipulate data within an RDBMS is by utilising a data manipulation language (DML). The purpose of a DML is to add (insert), delete, and modify (update) data within a database.[Reference](https://oracletutorial.net/dml-ddl-commands-in-oracle.html) 
+Among many DML environments, create, read, update and delete (CRUD) are the four primary functions of data and storage modification. [Reference](https://archive.org/details/managingdatabase00mart/mode/2up)
+A popular DML often used with RDBMS environments is SQL (Structured Query Language). Within SQL, each of the CRUD operators has their own SQL function: INSERT, SELECT, UPDATE and DELETE respectively. Using these statements, we can have SQL modify data stored within our relational database model. The CRUD concept of data manipulation also has further application in HTTP. For our example, Rails can control data using PUT/POST, GET, POST/PATCH and DELETE. Utilising SQL and HTTP, each language has it's own keywords for the developer to run commands or queries to execute data manipulation.
 
 ## Q12
 
@@ -422,8 +423,8 @@ As of 2015, Spotify runs over 100 production-level Cassandra clusters.[Reference
 NoSQL databases are commonly used for larger data sets due to their flexibility in structure and scalability. [Reference](https://db-engines.com/en/blog_post/23)
 Spotify uses Cassandra to store user profile attributes, metadata about artists, songs and more for better personalization."[Reference](https://labs.spotify.com/2015/01/09/personalization-at-spotify-using-cassandra)
 
-A generalisation of the data structure in use is that a user subscribes to Spotify's service and gains access to a database of songs that can be played or 'streamed' over the internet. Spotify provides play of these songs for free, though provides a premium subscription service to enhance the experience. Users that promote themselves as arists may provide their songs for streaming on Spotify's service and get paid a percentage amount per stream.
-Users are able to follow other users, discover arists, save songs and add them to playlists for future playback.
+A generalisation of the data structure in use is that a user subscribes to Spotify's service and gains access to a database of songs that can be played or 'streamed' over the internet. Spotify provides play of these songs for free, though provides a premium subscription service to enhance the experience. Users that promote themselves as artists may provide their songs for streaming on Spotify's service and get paid a percentage amount per stream.
+Users are able to follow other users, discover artists, save songs and add them to playlists for future playback.
 
 ##### e. Tracked Entities
 
