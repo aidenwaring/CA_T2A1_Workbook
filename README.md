@@ -219,43 +219,43 @@ A further investigation of these laws shows that each one is relevant to our app
 [Reference](https://www.oaic.gov.au/privacy/australian-privacy-principles)
 
 1. Open and transparent management of personal information
-We can address this by ensuring that the application contains a privacy policy that is transparent about the storage of the user's information. A lack of transparency of obsfucation results in not being compliant with the law.
+- We can address this by ensuring that the application contains a privacy policy that is transparent about the storage of the user's information. A lack of transparency of obsfucation results in not being compliant with the law.
 
 2. Anonymity and pseudonymity
-This principle requires individuals the option of not identifying themselves or instead using a pseudonym instead. This can be addressed by adjusting the user sign-up form to not require real-names and outlining this option within the application's privacy policy.
+- This principle requires individuals the option of not identifying themselves or instead using a pseudonym instead. This can be addressed by adjusting the user sign-up form to not require real-names and outlining this option within the application's privacy policy.
 
 3. Collection of solicited personal information
-Adhering to this principle, the application will only collect user information that is immediately relevant to the application and volunatarily given. User data is not to be collected from sources external to the application.
+- Adhering to this principle, the application will only collect user information that is immediately relevant to the application and volunatarily given. User data is not to be collected from sources external to the application.
 
 4. Dealing with unsolicited personal information
-If the application somehow happens to acquire unsolicited user information, the application must destroy or de-identify this unless it is contained within a Commonwleaht record.
+- If the application somehow happens to acquire unsolicited user information, the application must destroy or de-identify this unless it is contained within a Commonwleaht record.
 
 5. Notification of the collection of personal information
-The application clearly outlines in what circumstances it collects personal information.
+- The application clearly outlines in what circumstances it collects personal information.
 
 6. Use or disclosure of personal information
-The application clearly outlines in what circumstances it may discolse the information it holds.
+- The application clearly outlines in what circumstances it may discolse the information it holds.
 
 7. Direct marketing
-The application may only use collected personal information if certain conditions are met. All users are given the option to opt out of marketing emails.
+- The application may only use collected personal information if certain conditions are met. All users are given the option to opt out of marketing emails.
 
 8. Cross-border disclosure of personal information
-The application clearly outlines the steps it would take to protect personal information before it is disclosed overseas.
+- The application clearly outlines the steps it would take to protect personal information before it is disclosed overseas.
 
 9. Adoption, use or disclosure of government related identifiers
-The application's privacy policy clearly outlines the limited circumstances the organisation may adopt a government related identifier of an individual as its own identifier, or use or disclose a government related identifier of an individual.
+- The application's privacy policy clearly outlines the limited circumstances the organisation may adopt a government related identifier of an individual as its own identifier, or use or disclose a government related identifier of an individual.
 
 10. Quality of personal information personal information
-The application and its organisation must take reasonable steps to ensure the personal information it collects is accurate, up to date and complete.
+- The application and its organisation must take reasonable steps to ensure the personal information it collects is accurate, up to date and complete.
 
 11. Security of personal information
-The application and its organisation must take reasonable steps to protect personal information it holds from misuse, interference and loss, and from unauthorised access, modification or disclosure.
+- The application and its organisation must take reasonable steps to protect personal information it holds from misuse, interference and loss, and from unauthorised access, modification or disclosure.
 
 12. Access to personal information
-The application must oblige when an individual requests to be given access to personal information held about them by the entity. 
+- The application must oblige when an individual requests to be given access to personal information held about them by the entity. 
 
 13. Correction of persoanl information
-The application must oblige in relation to correcting the personal information it holds about individuals.
+- The application must oblige in relation to correcting the personal information it holds about individuals.
 
 ## Q9
 
@@ -301,6 +301,8 @@ Identify and explain the workings of TWO search algorithms and discuss and compa
 
 Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.
 
+Case Study: Spotify
+
 Conduct research into a marketplace website (app) and answer the following parts:  
 a. List and describe the software used by the app.
 b. Describe the hardware used to host the app.
@@ -312,3 +314,65 @@ g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for th
 
 **Answer:**
 
+#### Case Study: Spotify
+
+##### Application & Data
+List of software used by the app:
+- nginx - Web server 
+- Python - Programming Language
+- Bootstrap - CSS Framework
+- Java - Programming Language
+- PostgreSQL - Legacy User DBMS
+- Amazon S3 - Object Storage Service
+- Amazon CloudFront - Content Delivery Network
+- Apache Kafka - Stream-Processing Software
+- Apache Cassandra - Primary User DBMS 
+- Apache Hadoop - Big Data / Data Cluster Management Software
+- Google BigQuery - Data Warehouse
+- Apache Storm - Processing Computation Framework
+- Google Cloud Bigtable - Data Stirage System
+
+##### Hardware
+
+Spotify uses the Google Cloud Platform for their hosting infrastrucutre, having moved from their own phyisical servers back in 2018.
+
+##### Interaction of Technologies
+
+- Google Analytics - Provides Spotify with an analytics service for their website traffic reporting
+- Twilio SendGrid - Used to deliver transactional and marketing email content to subscribers
+- Optimizely - Web graphic user interface optimization tool, provides analytics on GUI layout changes for optimization
+- Google Cloud Dataflow - Executes Apache Beam pipeline for their Google Cloud Platform host infrastructure
+- Lookback - User interaction software used for UX research and usability testing
+
+##### DevOps
+
+- Docker
+- New Relic
+- Datadog
+- Pingdom
+- TestFlight
+- Percy
+- Apache CloudStack
+- Helios (Spotify)
+
+##### Data Structure
+
+Spotify currently uses Apache Cassandra database for it's primary DBMS, with PostgreSQL having been used up until 2015. [Reference](https://labs.spotify.com/2015/06/23/user-database-switch/)
+Cassandra is a NoSQL database model, as opposed PostgreSQL's relational-DBMS system.
+NoSQL is the term used to refer to a non-relational database. 
+
+##### Tracked Entities
+
+- User
+- Artist
+- Song
+- Album
+- Playlist
+- Podcast
+- Friends
+
+##### Tracked Entities
+
+[Entity Relationship Diagram](https://app.lucidchart.com/documents/edit/a74d4c0f-f685-445a-9450-fc850dc2aa62/0_0?beaconFlowId=C797023A1B3710CE)
+
+![Alt Image](/docs/Q14.png)
