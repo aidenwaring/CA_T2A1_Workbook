@@ -289,6 +289,45 @@ Identify and explain the workings of TWO sorting algorithms and discuss and comp
 
 **Answer:**
 
+##### Bubble Sort
+Bubble sort is a simple sorting algorithm used in computer science, also known as sinking sort, that sequentially steps through a list of items, compares adjacent elements and performs a swap if they are in the wrong order. This algorithm is known to be comparison based, named after it's performance logic. However basic, it is not suitable for data sets that are large. It's Big O notation for both it's average and worst case complexity is **O(n^2)**, where *n* represents the number of items.
+
+Example:
+We have an unsorted array, which needs to be sorted into ascending order.
+``[10, 40, 25, 35, 10]``
+
+Bubble sort algorithm begins with the first two elements and compares them to check which of these is a greater value.
+
+In our example, 40 is greater than 10, so this is already sorted. The algorithm then moves to the next index, where ``[40, 25]`` are compared.
+As 25 is less than 40, these values must be swapped, updating the array to look like this:
+``[10, 25, 40, 35, 10]``
+
+The algorithm moves from left to right sequentially through the array until it reaches the end. On it's first sequence, the array is updated to look like this:
+``[10, 25, 35, 40, 10]``
+
+As the array is not completely sorted, the process begins again until the algorithm identifies all elements have been properly sorted.
+``[10, 10, 25, 35, 40]``
+
+
+##### Selection Sort
+Selection sort has an improved efficiency to bubble sort. Selection sort works based off the largest element being selected and swapped with the last element. It's Big O notation for both it's average and worst case complexity is **0(n^2)**, where *n* represents the number of items.
+
+Example:
+``[12, 30, 20, 10, 40, 20, 44, 45]``
+
+The algorithm identifies the first value in the array, then the whole array is scanned sequentially. The algorithm identifies that 10 is the lowest value. The algorithm then swaps these two values. After this, the lowest value is sent to the beginning of the array.
+
+``[10, 30, 20, 12, 40, 20, 44, 45]``
+
+The next value, ``30``, is taken and is then swapped with the second lowest value ``12``.
+
+``[10, 12, 20, 30, 40, 20, 44, 45]``
+
+This process is repeated until the algorithm has identified that all elements are within ascending order.
+``[10, 12, 20, 20, 30, 40, 44, 45]``
+
+When comparing both algorithms, the worst case complexity is the same for both. However, best complexity is different. Bubble sort takes an order of *n* time, whereas the selection sort algorithm consumes an order of *n2* time. While both are considered non ideal for larger data sets, between the two choices, selection sort will be faster in the best complexity circumstances.
+
 ## Q13
 
 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O).[300-500]
