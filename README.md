@@ -301,8 +301,6 @@ Identify and explain the workings of TWO search algorithms and discuss and compa
 
 Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.
 
-Case Study: Spotify
-
 Conduct research into a marketplace website (app) and answer the following parts:  
 a. List and describe the software used by the app.
 b. Describe the hardware used to host the app.
@@ -334,7 +332,7 @@ List of software used by the app:
 
 ##### b. Hardware
 
-Spotify uses the Google Cloud Platform for their hosting infrastrucutre, having moved from their own phyisical servers back in 2018.[Reference](https://labs.spotify.com/2019/12/09/views-from-the-cloud-a-history-of-spotifys-journey-to-the-cloud-part-1/)
+Spotify uses the Google Cloud Platform for their hosting infrastructure, having moved from their own physical servers back in 2018.[Reference](https://labs.spotify.com/2019/12/09/views-from-the-cloud-a-history-of-spotifys-journey-to-the-cloud-part-1/) The transition into the cloud began back in 2015. Traffic was slowly migrated over to Google Cloud Platform from May 2017 through to 2018. Moving away from on-premise infrastructure allowed Spotify to scale their services to a growing user audience much faster and more flexibly, and beginning to take full advantage of the benefits that the cloud brings such as machine learning.
 
 ##### c. Interaction of Technologies
 
@@ -363,6 +361,9 @@ NoSQL is the term used to refer to a non-relational database.
 As of 2015, Spotify runs over 100 production-level Cassandra clusters.[Reference](https://labs.spotify.com/2015/09/21/cassandra-data-driven-configuration/) A cluster is a collection of nodes that represents a single system, which collectively represent a databse model. [Reference](https://data-flair.training/blogs/cassandra-cluster/)
 NoSQL databases are commonly used for larger data sets due to their flexibility in structure and scalability. [Reference](https://db-engines.com/en/blog_post/23)
 Spotify uses Cassandra to store user profile attributes, metadata about artists, songs and more for better personalization."[Reference](https://labs.spotify.com/2015/01/09/personalization-at-spotify-using-cassandra)
+
+A generalisation of the data structure in use is that a user subscribes to Spotify's service and gains access to a database of songs that can be played or 'streamed' over the internet. Spotify provides play of these songs for free, though provides a premium subscription service to enhance the experience. Users that promote themselves as arists may provide their songs for streaming on Spotify's service and get paid a percentage amount per stream.
+Users are able to follow other users, discover arists, save songs and add them to playlists for future playback.
 
 ##### e. Tracked Entities
 
