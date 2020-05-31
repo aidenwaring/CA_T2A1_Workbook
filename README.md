@@ -182,7 +182,16 @@ Availability refers to information that is accessible by authorized users, ensur
 
 The Rails Guides documentation details the best ways to secure a Rails application. [Reference](https://guides.rubyonrails.org/security.html)
 
+## Q7
+
+Discuss common methods of protecting information and data and how you would apply them to the project.[100-200]
+
+**Answer:**
+
+Rails has a number of built in methods and recommendations to ensure data integrity is ensured.
+
 Rails has a concept of preventing session hijacking, where a user may attempt to impersonate another authorized user via the use of stealing another user's session id. Rails uses CookieStore to provide a secure location to store session data. Cookie-based sessions provide both integrity as well as confidentiality to their contents. 
+
 To ensure user authorization has been validated, Rails recommends common security plugins such as devise and authlogic, which only store encrypted passwords. Rails also has in-built methods such as 'has_secure_password' to confirm that these are security procedures work as expected.
 
 As further explained in the Rails documentation, there are several security recommendations given to ensure the security of the application. Other aspects to consider include:
@@ -192,19 +201,61 @@ As further explained in the Rails documentation, there are several security reco
 
 Requiring that your application is employing CIA triad elements is essential to good Infosec procedures.
 
-## Q7
-
-Discuss common methods of protecting information and data and how you would apply them to the project.[100-200]
-
-**Answer:**
-
 ## Q8
 
 Research what your legal obligations are in relation to handling user data and how they can be met for the project.[100-200]
 
 **Answer:**
+As a developer delivering a product to ACME Corporation, our application falls under these the Australian Privacy Act, which requires us to be responsible for protecting the customer's personal information.
 
+The Australian Privacy Principles (or APPS) define the privacy protection framework in the [Privacy Act 1988](https://www.legislation.gov.au/Series/C2004A03712). There are 13 principles which govern the standards, rights and obligations around:
+- the collection, use and disclose of personal information
+- an organisation or agency’s governance and accountability
+- integrity and correction of personal information
+- the rights of individuals to access their personal information
+[Reference](https://www.oaic.gov.au/privacy/australian-privacy-principles)
 
+A further investigation of these laws shows that each one is relevant to our application. The below outlines each of the principles and the developer's response to how the application will respond to each one, handling user data approrpiately and in accordance to the law.
+[Reference](https://www.oaic.gov.au/privacy/australian-privacy-principles)
+
+1. Open and transparent management of personal information
+We can address this by ensuring that the application contains a privacy policy that is transparent about the storage of the user's information. A lack of transparency of obsfucation results in not being compliant with the law.
+
+2. Anonymity and pseudonymity
+This principle requires individuals the option of not identifying themselves or instead using a pseudonym instead. This can be addressed by adjusting the user sign-up form to not require real-names and outlining this option within the application's privacy policy.
+
+3. Collection of solicited personal information
+Adhering to this principle, the application will only collect user information that is immediately relevant to the application and volunatarily given. User data is not to be collected from sources external to the application.
+
+4. Dealing with unsolicited personal information
+If the application somehow happens to acquire unsolicited user information, the application must destroy or de-identify this unless it is contained within a Commonwleaht record.
+
+5. Notification of the collection of personal information
+The application clearly outlines in what circumstances it collects personal information.
+
+6. Use or disclosure of personal information
+The application clearly outlines in what circumstances it may discolse the information it holds.
+
+7. Direct marketing
+The application may only use collected personal information if certain conditions are met. All users are given the option to opt out of marketing emails.
+
+8. Cross-border disclosure of personal information
+The application clearly outlines the steps it would take to protect personal information before it is disclosed overseas.
+
+9. Adoption, use or disclosure of government related identifiers
+The application's privacy policy clearly outlines the limited circumstances the organisation may adopt a government related identifier of an individual as its own identifier, or use or disclose a government related identifier of an individual.
+
+10. Quality of personal information personal information
+The application and its organisation must take reasonable steps to ensure the personal information it collects is accurate, up to date and complete.
+
+11. Security of personal information
+The application and its organisation must take reasonable steps to protect personal information it holds from misuse, interference and loss, and from unauthorised access, modification or disclosure.
+
+12. Access to personal information
+The application must oblige when an individual requests to be given access to personal information held about them by the entity. 
+
+13. Correction of persoanl information
+The application must oblige in relation to correcting the personal information it holds about individuals.
 
 ## Q9
 
@@ -228,8 +279,6 @@ Describe the manipulative aspects of the relational database model. Your descrip
 
 **Answer:**
 
-
-
 ## Q12
 
 ##### Details:
@@ -246,9 +295,7 @@ Identify and explain the workings of TWO search algorithms and discuss and compa
 
 **Answer:**
 
-
 ## Q14
-
 
 ##### Details:
 
