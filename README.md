@@ -26,7 +26,7 @@ ACME Corporation is looking for devs with an understanding of Rails. The followi
 
 ## Q1
 
-Describe the architecture of a typical Rails application. [200-300]
+Describe the architecture of a typical Rails application.
 
 **Answer:**
 
@@ -46,7 +46,7 @@ Rails also follows the "Convention Over Configuration" rule, which is also known
 
 ## Q2
 
-Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database.[150-200]
+Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database.
 
 **Answer:**
 
@@ -81,7 +81,7 @@ Studies have also shown that PostgreSQL performs slightly slower compared to alt
 
 ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement.
 
-Discuss the implementation of Agile project management methodology. [200-300]
+Discuss the implementation of Agile project management methodology.
 
 **Answer:**
 
@@ -100,40 +100,40 @@ The implementation of the Agile methodology is first determined by your delivery
 
 If we take a look at using scrum as an example, after determining that scrum is chosen to be the preferred delivery methodology, implementing it as part of managing the project is as follows:[Reference](https://www.scrumguides.org/scrum-guide.html)
 
-#### 1. Defining Scrum Team
+##### 1. Defining Scrum Team
 
 This phase begins with determining the product owner (often the end user or client). Followed by determining the scrum master (often a senior developer of project manager). This is then followed by establishing the scrum team members (often the development staff involved in the project which includes programmers, testers, team leads).
 
-#### 2. Sprint Objectives 
+##### 2. Sprint Objectives 
 
 A product backlog is created. This is a tool to systematically list all features that should be implemented during the development process. Ordered by priority, these required items are each known as a "user story". 
 
-#### 3. Sprint Planning
+##### 3. Sprint Planning
 
 The duration of the sprint is determined. The sprint's duration is relative to how often the team will receive feedback from the client as this is done between sprints. Shorter sprints result in customer feedback being given more frequently whereas longer sprints allow the team to work on items more thoroughly. Sprints are often two weeks in duration by default.
 
 The selected team for the scrum choses the most important user stories (MVPs) to work on. A sprint backlog is created which consists of items to be completed in the next sprint.
     
-#### 4. Sprinting
+##### 4. Sprinting
 
 Scrum meetings or standup meetings (standups) are held typically at the start of each work day during the sprint for developers to update team leads and project managers. Each member discusses the current project's status, where they are at with their objectives, completed items, identified problems and roadblocks.
 Work begins on the selected user stories. User stories are organised into cards, and as the sprint progresses are moved into categories: to-do, in progress, testing and done. Project management software platforms such as Atlassian JIRA and Trello are often used to organise these.
 
-#### 5. Sprint Testing & Demonstration
+##### 5. Sprint Testing & Demonstration
 
 As part of the full life-cycle testing process that agile uses, internal testing is performed on items delivered during the sprint. Once this is completed, the product is often demonstrated to either a test group or client for further user feedback.
 
-#### 6. Sprint Retrospective
+##### 6. Sprint Retrospective
 
 Once the previous segment has completed, the team reflects on the performance of the sprint and undergo an analysis on what worked and what did not. Suggestions on how to improve and given and the team takes construcive criticism in an analysis to provide to the scrum master. These improvements can be implemented for the next sprint.
 
-#### 7. Next Cycle of Sprints
+##### 7. Next Cycle of Sprints
 
 Taking into consideration the feedback from the testing and retrospective, the next sprint begins with developers working on the sprint backlog. This process is repeated until a complete end product is delivered.
 
 ## Q4
 
-Provide an overview and description of a standard source control workflow. [100-200]
+Provide an overview and description of a standard source control workflow.
 
 **Answer:**
 
@@ -150,7 +150,7 @@ This segmentation of new code and it's staged change control methodology ensures
 
 ## Q5
 
-Provide an overview and description of a standard software testing process (e.g. manual testing). [100-200]
+Provide an overview and description of a standard software testing process (e.g. manual testing).
 
 **Answer:**
 
@@ -167,7 +167,7 @@ Manual testing is a process of manually executing test cases without the use of 
 
 Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.
 
-Discuss and analyse requirements related to information system security and how they relate to the project.[100-200]
+Discuss and analyse requirements related to information system security and how they relate to the project.
 
 **Answer:**
 
@@ -184,7 +184,7 @@ The Rails Guides documentation details the best ways to secure a Rails applicati
 
 ## Q7
 
-Discuss common methods of protecting information and data and how you would apply them to the project.[100-200]
+Discuss common methods of protecting information and data and how you would apply them to the project.
 
 **Answer:**
 
@@ -203,7 +203,7 @@ Requiring that your application is employing CIA triad elements is essential to 
 
 ## Q8
 
-Research what your legal obligations are in relation to handling user data and how they can be met for the project.[100-200]
+Research what your legal obligations are in relation to handling user data and how they can be met for the project.
 
 **Answer:**
 As a developer delivering a product to ACME Corporation, our application falls under these the Australian Privacy Act, which requires us to be responsible for protecting the customer's personal information.
@@ -263,9 +263,15 @@ A further investigation of these laws shows that each one is relevant to our app
 
 ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement.
 
-Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.[100-200]
+Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
 
 **Answer:**
+
+The relational database model represents the database as a collection of relatations. The structural aspects of a relational database are primarily the collection of tables which helps define the relationships between data. Tables consist of multiple rows, where each row is a set of values that are related to each other using specific notation. The rows' values are represented in the columns of the table. The schema refers to a databases structure and also denotes what relations it contains. [Reference](https://dondi.lmu.build/share/db/relational1.pdf)
+
+Relational Database Models contain the concept of constraints domain, key and referential integrity constraints. These constraints are rules set in place by the schema to ensure that data is not incorrectly referenced or duplicated. Domain restraints ensure data validity, such as checking for null data. Key constraints ensure that the key of the row attributed to data is unique and is only for that set of data. Referential integrity allows for the concept of foreign keys, which allows the relational database management system (R-DBMS) to create a relation which should refer to data in other tables.[Reference](https://www.guru99.com/relational-data-model-dbms.html)
+
+These relationships allow for the seperation of data. The seperation of data into seperate tables with links provides a number of benefits to our system, such as better performance, as queries will often be able to search through records faster using keys and seperating out table information rather than reading a large table sequentially.
 
 ## Q10
 
@@ -273,11 +279,16 @@ Describe the integrity aspects of the relational database model. Your descriptio
 
 **Answer:**
 
+Each of these aforementioned are used in relational database structure to ensure data validity and consistency. These integrity notations also ensure the ACID principles (Atomicty, Consistency, Isolation and Durability) as we refered to them earlier in the RfQ. 
+
 # Q11
 
 Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.[100-200]
 
+
+
 **Answer:**
+CRUD
 
 ## Q12
 
@@ -285,7 +296,7 @@ Describe the manipulative aspects of the relational database model. Your descrip
 
 The efficiency of an app (i.e. site) and the algorithms used are of the utmost importance. The next set of questions relate to this RfQ-requirement.
 
-Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O).[300-500]
+Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O).
 
 **Answer:**
 
@@ -308,7 +319,6 @@ The algorithm moves from left to right sequentially through the array until it r
 As the array is not completely sorted, the process begins again until the algorithm identifies all elements have been properly sorted.
 ``[10, 10, 25, 35, 40]``
 
-
 ##### Selection Sort
 Selection sort has an improved efficiency to bubble sort. [Reference](https://techdifferences.com/difference-between-bubble-sort-and-selection-sort.html#ComparisonChart) Selection sort works based off the largest element being selected and swapped with the last element. It's Big O notation for both it's average and worst case complexity is **0(n^2)**, where *n* represents the number of items.
 
@@ -330,7 +340,7 @@ When comparing both algorithms, the worst case complexity is the same for both. 
 
 ## Q13
 
-Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O).[300-500]
+Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O).
 
 **Answer:**
 
@@ -358,7 +368,7 @@ c. Describe the interaction of technologies within the app.
 d. Describe the way data is structured within the app.
 e. Identify entities which must be tracked by the app.
 f. Identify the relationships and associations between the entities you have identified in part (e).
-g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model).[50-100]
+g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model).
 
 **Answer:**
 
