@@ -171,6 +171,27 @@ Discuss and analyse requirements related to information system security and how 
 
 **Answer:**
 
+Information system security (Infosec) refers to processes and tools designed to keep data secure and to protect business information from being modified by unauthorized access.[Reference](https://www.cisco.com/c/en/us/products/security/what-is-information-security-infosec.html)
+Looking at each of these principles, we can see how each refers to our project.[Reference](https://www.csoonline.com/article/3513899/what-is-information-security-definition-principles-and-jobs.html)
+Information system security is considered to have three core principles: confidentiality, availability and integrity (referred to as CIA triad). 
+Mozilla Developer Network defines confidentiality as "protecting information from being accessed by unauthorised parties."[Reference](https://developer.mozilla.org/en-US/docs/Archive/Security/Confidentiality,_Integrity,_and_Availability) Only those who are authorised to do so should gain access to sensitive data.
+
+Integrity refers to ensuring the authenticity of information. Information should not be altered, and the application's information must be genuine.
+
+Availability refers to information that is accessible by authorized users, ensuring that the availability of the product or application is not compromised, such as a denial of service attack.
+
+The Rails Guides documentation details the best ways to secure a Rails application. [Reference](https://guides.rubyonrails.org/security.html)
+
+Rails has a concept of preventing session hijacking, where a user may attempt to impersonate another authorized user via the use of stealing another user's session id. Rails uses CookieStore to provide a secure location to store session data. Cookie-based sessions provide both integrity as well as confidentiality to their contents. 
+To ensure user authorization has been validated, Rails recommends common security plugins such as devise and authlogic, which only store encrypted passwords. Rails also has in-built methods such as 'has_secure_password' to confirm that these are security procedures work as expected.
+
+As further explained in the Rails documentation, there are several security recommendations given to ensure the security of the application. Other aspects to consider include:
+- SQL Injection Countermeasures (Rails built-in features to sanitise SQL queries)
+- XSS/Cross-Site Scripting Attacks (Rails recommends code obfuscation and correct routing)
+- Redirection
+
+Requiring that your application is employing CIA triad elements is essential to good Infosec procedures.
+
 ## Q7
 
 Discuss common methods of protecting information and data and how you would apply them to the project.[100-200]
