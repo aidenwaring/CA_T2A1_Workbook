@@ -316,7 +316,7 @@ g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for th
 
 #### Case Study: Spotify
 
-##### Application & Data
+##### a. Application & Data
 List of software used by the app:
 - nginx - Web server 
 - Python - Programming Language
@@ -332,11 +332,11 @@ List of software used by the app:
 - Apache Storm - Processing Computation Framework
 - Google Cloud Bigtable - Data Stirage System
 
-##### Hardware
+##### b. Hardware
 
-Spotify uses the Google Cloud Platform for their hosting infrastrucutre, having moved from their own phyisical servers back in 2018.
+Spotify uses the Google Cloud Platform for their hosting infrastrucutre, having moved from their own phyisical servers back in 2018.[Reference](https://labs.spotify.com/2019/12/09/views-from-the-cloud-a-history-of-spotifys-journey-to-the-cloud-part-1/)
 
-##### Interaction of Technologies
+##### c. Interaction of Technologies
 
 - Google Analytics - Provides Spotify with an analytics service for their website traffic reporting
 - Twilio SendGrid - Used to deliver transactional and marketing email content to subscribers
@@ -344,7 +344,7 @@ Spotify uses the Google Cloud Platform for their hosting infrastrucutre, having 
 - Google Cloud Dataflow - Executes Apache Beam pipeline for their Google Cloud Platform host infrastructure
 - Lookback - User interaction software used for UX research and usability testing
 
-##### DevOps
+DevOps Platforms:
 
 - Docker
 - New Relic
@@ -355,23 +355,51 @@ Spotify uses the Google Cloud Platform for their hosting infrastrucutre, having 
 - Apache CloudStack
 - Helios (Spotify)
 
-##### Data Structure
+##### d. Data Structure
 
 Spotify currently uses Apache Cassandra database for it's primary DBMS, with PostgreSQL having been used up until 2015. [Reference](https://labs.spotify.com/2015/06/23/user-database-switch/)
 Cassandra is a NoSQL database model, as opposed PostgreSQL's relational-DBMS system.
 NoSQL is the term used to refer to a non-relational database. 
+As of 2015, Spotify runs over 100 production-level Cassandra clusters.[Reference](https://labs.spotify.com/2015/09/21/cassandra-data-driven-configuration/) A cluster is a collection of nodes that represents a single system, which collectively represent a databse model. [Reference](https://data-flair.training/blogs/cassandra-cluster/)
+NoSQL databases are commonly used for larger data sets due to their flexibility in structure and scalability. [Reference](https://db-engines.com/en/blog_post/23)
+Spotify uses Cassandra to store user profile attributes, metadata about artists, songs and more for better personalization."[Reference](https://labs.spotify.com/2015/01/09/personalization-at-spotify-using-cassandra)
 
-##### Tracked Entities
+##### e. Tracked Entities
 
 - User
 - Artist
 - Song
 - Album
 - Playlist
-- Podcast
-- Friends
+- Followers
+- Liked Songs
 
-##### Tracked Entities
+##### f. Relationships and Associations between the Entities
+
+- **User**
+    - User can have zero to many *Playlists*
+    - User can have zero to many *Followers*
+    - User can have like zero to many *Songs*
+    - User can have zero to many *Liked Songs*
+
+- **Artist**
+    - Artists can have one to many *Songs*
+    - Artists can have one to many *Albums*
+
+- **Playlist**
+    - Playlist can have zero to many *Songs*
+    - Playlist can have one to one *Users*
+
+- **Song**
+    - Song can have one and to many *Artists*
+    - Song can have one to many *Genres*
+
+- **Album**
+    - Album can have one to many *Artists*
+
+- **Followers** (is an entity of user, where users may chose to follow other users)
+
+##### g. Entity Relationship Diagram
 
 [Entity Relationship Diagram](https://app.lucidchart.com/documents/edit/a74d4c0f-f685-445a-9450-fc850dc2aa62/0_0?beaconFlowId=C797023A1B3710CE)
 
