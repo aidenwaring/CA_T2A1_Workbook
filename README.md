@@ -290,7 +290,7 @@ Identify and explain the workings of TWO sorting algorithms and discuss and comp
 **Answer:**
 
 ##### Bubble Sort
-Bubble sort is a simple sorting algorithm used in computer science, also known as sinking sort, that sequentially steps through a list of items, compares adjacent elements and performs a swap if they are in the wrong order. This algorithm is known to be comparison based, named after it's performance logic. However basic, it is not suitable for data sets that are large. It's Big O notation for both it's average and worst case complexity is **O(n^2)**, where *n* represents the number of items.
+Bubble sort is a simple sorting algorithm used in computer science, also known as sinking sort, that sequentially steps through a list of items, compares adjacent elements and performs a swap if they are in the wrong order. [Reference](https://www.101computing.net/bubble-sort-vs-insertion-sort/)This algorithm is known to be comparison based, named after it's performance logic. However basic, it is not suitable for data sets that are large. It's Big O notation for both it's average and worst case complexity is **O(n^2)**, where *n* represents the number of items.
 
 Example:
 We have an unsorted array, which needs to be sorted into ascending order.
@@ -310,7 +310,7 @@ As the array is not completely sorted, the process begins again until the algori
 
 
 ##### Selection Sort
-Selection sort has an improved efficiency to bubble sort. Selection sort works based off the largest element being selected and swapped with the last element. It's Big O notation for both it's average and worst case complexity is **0(n^2)**, where *n* represents the number of items.
+Selection sort has an improved efficiency to bubble sort. [Reference](https://techdifferences.com/difference-between-bubble-sort-and-selection-sort.html#ComparisonChart) Selection sort works based off the largest element being selected and swapped with the last element. It's Big O notation for both it's average and worst case complexity is **0(n^2)**, where *n* represents the number of items.
 
 Example:
 ``[12, 30, 20, 10, 40, 20, 44, 45]``
@@ -333,6 +333,17 @@ When comparing both algorithms, the worst case complexity is the same for both. 
 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O).[300-500]
 
 **Answer:**
+
+##### Sequential Search
+The sequential search is one of the most common searching algorithms and is an example of a *linear* algorithm. Sequential search attempts to match the target value against each value in a given array in turn until a match is determined. This is done regardless of the array size, even if the entire array needs to be searched. This process is simply accomplished by determining the first element in the array, then sequentially checking the remaining elements in the order until a condition is met: either a match is found, or the entire array has been searched.[Reference](https://www.khanacademy.org/computing/computer-science/algorithms)
+
+Big O notation of this algorithm is **O(n)**. The algorithm is O(n) as for as many elements that are in N, that is the number of comparisons the search makes until a match is found. The computational speed of the search is directly related to the number of the values in the search conditions.
+
+##### Binary Search
+
+Binary search is an example of a *logarithmic* search algorithm. In this algorithm, the midpoint of a given sorted array is determined, and the value being searched is checked against the midpoint.  If the value of the search key is less than the value in the middle, narrow the interval to the lower half. Otherwise, narrow it to the upper half. Each time through the algorithm's loop, the search term or list is halved. This is the identifying factor of a logarithmic algorithm. Continue to check until the value is found or the interval is empty. [Reference](https://www.geeksforgeeks.org/binary-search/)
+
+Big O notation for this algorithm is **O(logn)**. When graphed and compared, a binary search is found to be much more efficient than sequential search, and those of Big O (n) and (n log n). [Reference](https://www.bigocheatsheet.com/)
 
 ## Q14
 
